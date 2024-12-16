@@ -1,13 +1,10 @@
-import React from "react";
-
-
-interface GreetingProps {
+type GreetingProps = {
     name: string;
 }
 
-const Greeting: React.FC<GreetingProps> = ({ name }) => {
+const Greeting = ( props: GreetingProps ) => {
     return <div>
-        <h5>Bonjour, {name}!</h5>
+        <h5>Bonjour, {props.name}!</h5>
     </div>
 }
 
